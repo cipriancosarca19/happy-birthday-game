@@ -1,0 +1,106 @@
+body {
+	background: url(../i/water.png) repeat;
+	font-family: "FF2";
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+canvas {
+	display: block;
+	margin: 60px auto 30px;
+	width: 384px;
+}
+
+.message-box {   
+        border: 5px solid #ababab;
+        background-color:#fff;
+		margin: 0 auto 50px;
+		width: 340px;
+/*		position: relative;
+		top: -700px;*/
+}
+
+.messages span {
+		display: none;
+}
+
+.message-box span {
+		display: block;
+        position:relative;
+        padding:10px 10px;
+        border-bottom:5px solid #ababab;
+		line-height: 1.5em;
+/*        font-weight:bold;*/
+}
+
+.message-box span img {
+	float: left;
+	padding-right: 7px;
+}
+
+.message-box span.chinese img {
+	padding-bottom: 15px;
+}
+
+.message-box span.tardis  {
+	padding-left: 50px;
+}
+
+.message-box span.endtardis img {
+	padding-bottom: 22px;
+}
+
+.message-box span em {
+	color: rgb(87,118,178);
+	font-style: normal;
+}
+
+
+
+/* Create pixelated corners in message-box */
+
+.message-box > span:first-of-type {
+        background-color:#fff;
+        border-top:5px solid #ababab;
+        margin-top:-10px;
+        padding-top:6px;
+}
+
+.message-box > span:last-of-type {
+        margin-bottom:-10px;
+        background-color:#fff;
+        padding-bottom:8px;
+}
+
+.message-box > span:first-of-type:before,
+.message-box > span:last-of-type:after {
+        content:'';
+        position:absolute;
+        left:5px;
+        right:5px;
+        display:block;
+        height:5px;
+        background-color:#fff;
+}
+
+.message-box > span:first-of-type:before {
+        top:-10px;
+        border-top:5px solid #ababab;
+}
+
+.message-box > span:last-of-type:after {
+        bottom:-10px;
+        border-bottom:5px solid #ababab;
+}
+
+@font-face {
+    font-family: 'FF2';
+    src: url('../f/final-fantasy-2-webfont.eot');
+    src: url('../f/final-fantasy-2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/final-fantasy-2-webfont.woff') format('woff'),
+         url('../f/final-fantasy-2-webfont.ttf') format('truetype'),
+         url('../f/final-fantasy-2-webfont.svg#final_fantasy_2regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
